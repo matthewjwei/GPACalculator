@@ -1,9 +1,43 @@
 <!DOCTYPE html>
- 
+
+
 <html>
  
-<head><title>GPA Calculator</title></head>
- 
+<head><title>GPA Calculator</title>
+
+ <style>
+  
+
+  .container1{
+  width: 500px;
+  height: 300px;
+  background-color: #ffe2a9;
+  }
+
+  .container1 div{
+  
+  text-align: center;
+  line-height: 30px;
+  
+  }
+
+  .container2 {
+    height: 25px;
+    width: 500px;
+    background-color: #a1edec;
+  }
+
+  .semesterTitle {
+    float: left;
+    float: top;
+    padding-left: 10px;
+    padding-top: 0px;
+  
+  }
+
+</head>
+</style>
+
 <body>
  
 <br></br><br></br>
@@ -24,94 +58,116 @@
 
 <br>
 
+<div class = container1>
+
+<div class = container2>
+  <div class = semesterTitle>
+    Semester 1
+  </div>
+</div>
+
 <form action="/action_page.php">
  
-  <br>
+  <div class = box1>
+    <br>
+    <input type="text" name="course1name" placeholder="Course 1 Name">
+    &nbsp;&nbsp;&nbsp;
+    <select id="course1grades">
+      <option value = "--">--</option>
+      <option value = "A">A</option>
+      <option value = "B+">B+</option>
+      <option value = "B">B</option>
+      <option value = "B-">B-</option>
+      <option value = "C">C+</option>
+      <option value = "C">C</option>
+      <option value = "C">C-</option>
+      <option value = "D+">D+</option>
+      <option value = "D">D</option>
+      <option value = "F">F</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" name="course1credits" placeholder="Credits">
+    <br>
+  </div>
  
-  <input type="text" name="course1name" placeholder="Course 1 Name">
-  &nbsp;&nbsp;&nbsp;
-  <select id="course1grades">
-    <option value = "--">--</option>
-    <option value = "A">A</option>
-    <option value = "B+">B+</option>
-    <option value = "B">B</option>
-    <option value = "B-">B-</option>
-    <option value = "C">C+</option>
-    <option value = "C">C</option>
-    <option value = "C">C-</option>
-    <option value = "D+">D+</option>
-    <option value = "D">D</option>
-    <option value = "F">F</option>
-  </select>
-  &nbsp;&nbsp;&nbsp;
-  <input type="text" name="course1credits" placeholder="Credits">
-  <br>
+  <div class = box2>
+    <br>
+    <input type="text" name="course2name" placeholder="Course 2 Name">
+    &nbsp;&nbsp;&nbsp;
+    <select id="course2grades">
+      <option value = "--">--</option>
+      <option value = "A">A</option>
+      <option value = "B+">B+</option>
+      <option value = "B">B</option>
+      <option value = "B-">B-</option>
+      <option value = "C">C+</option>
+      <option value = "C">C</option>
+      <option value = "C">C-</option>
+      <option value = "D+">D+</option>
+      <option value = "D">D</option>
+      <option value = "F">F</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" name="course2credits" placeholder="Credits">
+    <br>
+  </div>
  
+ <div class = box3>
   <br>
-  <input type="text" name="course2name" placeholder="Course 2 Name">
-  &nbsp;&nbsp;&nbsp;
-  <select id="course2grades">
-    <option value = "--">--</option>
-    <option value = "A">A</option>
-    <option value = "B+">B+</option>
-    <option value = "B">B</option>
-    <option value = "B-">B-</option>
-    <option value = "C">C+</option>
-    <option value = "C">C</option>
-    <option value = "C">C-</option>
-    <option value = "D+">D+</option>
-    <option value = "D">D</option>
-    <option value = "F">F</option>
-  </select>
-  &nbsp;&nbsp;&nbsp;
-  <input type="text" name="course2credits" placeholder="Credits">
-  <br>
+    <input type="text" name="course3name" placeholder="Course 3 Name">
+    &nbsp;&nbsp;&nbsp;
+    <select id="course3grades">
+      <option value = "--">--</option>
+      <option value = "A">A</option>
+      <option value = "B+">B+</option>
+      <option value = "B">B</option>
+      <option value = "B-">B-</option>
+      <option value = "C">C+</option>
+      <option value = "C">C</option>
+      <option value = "C">C-</option>
+      <option value = "D+">D+</option>
+      <option value = "D">D</option>
+      <option value = "F">F</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" name="course3credits" placeholder="Credits">
+    <br>
+  </div>
  
+ <div class = box4>
   <br>
-  <input type="text" name="course3name" placeholder="Course 3 Name">
-  &nbsp;&nbsp;&nbsp;
-  <select id="course3grades">
-    <option value = "--">--</option>
-    <option value = "A">A</option>
-    <option value = "B+">B+</option>
-    <option value = "B">B</option>
-    <option value = "B-">B-</option>
-    <option value = "C">C+</option>
-    <option value = "C">C</option>
-    <option value = "C">C-</option>
-    <option value = "D+">D+</option>
-    <option value = "D">D</option>
-    <option value = "F">F</option>
-  </select>
-  &nbsp;&nbsp;&nbsp;
-  <input type="text" name="course3credits" placeholder="Credits">
-  <br>
- 
-  <br>
-  <input type="text" name="course3name" placeholder="Course 4 Name">
-  &nbsp;&nbsp;&nbsp;
-  <select id="course4grades">
-    <option value = "--">--</option>
-    <option value = "A">A</option>
-    <option value = "B+">B+</option>
-    <option value = "B">B</option>
-    <option value = "B-">B-</option>
-    <option value = "C">C+</option>
-    <option value = "C">C</option>
-    <option value = "C">C-</option>
-    <option value = "D+">D+</option>
-    <option value = "D">D</option>
-    <option value = "F">F</option>
-  </select>
-  &nbsp;&nbsp;&nbsp;
-  <input type="text" name="course4credits" placeholder="Credits">
-  <br>
- 
+    <input type="text" name="course3name" placeholder="Course 4 Name">
+    &nbsp;&nbsp;&nbsp;
+    <select id="course4grades">
+      <option value = "--">--</option>
+      <option value = "A">A</option>
+      <option value = "B+">B+</option>
+      <option value = "B">B</option>
+      <option value = "B-">B-</option>
+      <option value = "C">C+</option>
+      <option value = "C">C</option>
+      <option value = "C">C-</option>
+      <option value = "D+">D+</option>
+      <option value = "D">D</option>
+      <option value = "F">F</option>
+    </select>
+    &nbsp;&nbsp;&nbsp;
+    <input type="text" name="course4credits" placeholder="Credits">
+    <br>
+  </div>
+
+  <br></br>
+
+  <button type="Add Another Course">Add Another Course</button>
+  <button type="Add Another Course">Add Another Semester</button>
+
   <br></br>
  
   <input type="submit" value="Submit">
  
 </form>
+
+</div>
  
 </center>
  
